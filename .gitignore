@@ -19,3 +19,6 @@ src/test/data/sandbox/
 
 # MacOS custom attributes files created by Finder
 .DS_Store
+
+# Unwanted artifact from gradle plugin: plantUml
+/docs/images/Style.png

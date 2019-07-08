@@ -1,4 +1,4 @@
-@startuml UndoRedoState0
+@startuml
 !include style.puml
 skinparam ClassFontColor #000000
 hide members

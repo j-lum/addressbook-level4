@@ -78,5 +78,5 @@ end box
 As GitHub has not implemented native support for PlantUML, we export all of our diagrams as images to avoid external
 dependencies. The PlantUML integration plugin supports exporting individual files.
 
-The PlantUML executable jar provided on the official http://plantuml.com/download[PlantUML website] will export the
-entire directory instead. This can prove to be extremely useful.
+The gradle task `plantUml` is provided to export all the diagrams in `docs/diagrams` to `docs/images`. You will
+need to `git add` the generated diagrams.
