@@ -47,13 +47,7 @@ For example, you can create a `style.puml` with the contents
 [source]
 ----
 ...
-'T1 and T2 are triadic colors.
-
-!define LOGIC_COLOR #493DD1
-!define LOGIC_COLOR_T1 #933DD1
-
-
-!define LOGIC_COLOR_T2 #3D7BD1
+!define LOGIC_COLOR #3333C4
 ...
 ----
 
@@ -76,7 +70,7 @@ end box
 === Exporting UML diagrams as PNGs for use
 
 As GitHub has not implemented native support for PlantUML, we export all of our diagrams as images to avoid external
-dependencies. The PlantUML integration plugin supports exporting individual files.
+dependencies. The PlantUML integration plugin supports exporting individual files through its GUI.
 
-The PlantUML executable jar provided on the official http://plantuml.com/download[PlantUML website] will export the
-entire directory instead. This can prove to be extremely useful.
+The gradle task `plantUmlIO` is provided to export all the diagrams in `docs/diagrams` to `docs/images`. You will
+need to `git add` the generated diagrams.

@@ -12,6 +12,7 @@ plugins {
     id 'com.github.johnrengelman.shadow' version '4.0.4'
     id 'org.asciidoctor.convert' version '1.5.6'
     id 'application'
+    id 'com.cosminpolifronie.gradle.plantuml' version '1.6.0'
 }
 
 // Specifies the entry point of the application
@@ -227,6 +228,12 @@ task deployOfflineDocs(type: Copy) {
     }
 }
 
+plantUml {
+    render input: 'docs/diagrams/*.puml', output: 'docs/images', format: 'png', withMetadata: false
+}
+
+//weird bug where the name of the plugin clashes with name of the task, use plantUmlIO instead
+asciidoctor.dependsOn plantUmlIO
 deployOfflineDocs.dependsOn asciidoctor
 processResources.dependsOn deployOfflineDocs
 
