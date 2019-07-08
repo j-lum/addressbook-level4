@@ -1,5 +1,5 @@
 @startuml
-!include style.puml
+!include style.ps
 
 skinparam arrowColor STORAGE_COLOR
 skinparam classBackgroundColor STORAGE_COLOR

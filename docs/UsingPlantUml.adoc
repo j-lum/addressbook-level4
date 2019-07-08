@@ -39,11 +39,11 @@ image::ConfiguringGraphviz.png[]
 === Applying consistent formatting to UML diagrams
 
 It is highly recommended to consistently color your UML diagrams as an visual aid.
-You can achieve this by creating a dictionary of colors and import it à la CSS
+You can achieve this by creating a dictionary of colors and import it à la CSS.
 
-For example, you can create a `style.puml` with the contents
+For example, you can create a `style.ps` with the contents
 
-.style.puml
+.style.ps
 [source]
 ----
 ...
@@ -56,7 +56,7 @@ and use it in another PlantUML file like this:
 .undo-sequence-diagram.puml
 [source]
 ----
-!include style.puml
+!include style.ps
 
 box Logic LOGIC_COLOR_T2
 participant ":LogicManager" as LogicManager LOGIC_COLOR

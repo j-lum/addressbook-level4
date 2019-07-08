@@ -1,5 +1,5 @@
 @startuml
-!include style.puml
+!include style.ps
 skinparam ClassFontColor #000000
 hide members
 hide circle
